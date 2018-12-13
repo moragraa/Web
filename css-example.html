@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html style="color:darkslategrey">
 <head>
     <title>HTML controls</title>
+
+    <style>
+        p {
+            font-family: -apple-system; font-size: 12px
+        }
+        head {
+            font-family: -apple-system; font-size: 22px
+        }
+        h1 {
+            font-family: -apple-system; font-size: 18px
+        }
+        h2 {
+            font-family: -apple-system; font-size: 18px
+        }
+    </style>
+
 </head>
-<body>
+<body style="background-color: salmon" >
     <h2>Articles and sections</h2>
     
     <article>
-        <section>
+        
+        <section >
             section 1<i>with italic</i> and <u>with underline</u>
         </section>
 
@@ -17,23 +34,24 @@
             </p>
         </section>
     </article>
+
     <!--This is teh actual body of the table-->
 
     <!--Row 0-->
     <h2>Tables</h2>
-    <table border="1">
+    <table border="0" style="background-color:papayawhip; border: 4mm ridge rgb(170,50,220, .6); text-align: center">
         <thead>
             <caption>Table Title</caption>
             <tr>
-                <td>
+                <td text-align: center>
                     <b>Column0</b>
                 </td>
-                <td>
+                <td text-align: center>
                     <b>Column1</b>
                 </td>
             </tr>
         </thead>
-        <tbody>
+        <tbody >
             <!-- Row 1 -->
             <tr>
                 <td>
@@ -86,7 +104,6 @@
             <label>Password</label>
             
             <input type="password" value="123" />
-            <br />
             <label></label>
             <input type="number" placeholder="123" />
 
@@ -110,16 +127,25 @@
             <hr />
             Footer page
         </footer>
-        <p>
+        <p >
             Pasos para actualizar de manera remota: 
+            <br>
                 -Primero se hace el cambio en el original
+            <br>
                 -Se abre el source code
+            <br>
                 -Se agrega a staged changes el html
+            <br>        
                 -Se guardan los cambio
+            <br>
                 -Se agregan los changes a staged changes para hacer un working tree
+            <br>
                 -Cuando se terminen de hacer todos los changes se escribe en message el nombre de los cambios
+            <br>
                 -Se abre la terminal en la carpeta donde esten
+            <br>
                 -Se escribe el codigo "git push origin master -f"
+            <br>
                 -Se actualiza de manera remota
         </p>
 
